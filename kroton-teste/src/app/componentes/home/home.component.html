@@ -1,0 +1,116 @@
+<div class="row card-container">
+  <div id="cardCont" class="col-md-12">
+    <div id="cardRow" class="row">
+      <div id="card1" class="col-6 col-sm-6 col-md-6">
+        <div class="card">
+          <div class="card-body">
+
+            <div class="img-box">
+              <img src="./../../../assets/img/img1.svg" alt="">
+            </div>
+
+            <div class="txt-box">
+              <h1 class="title-card">Título 1</h1>
+              <p class="text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's.
+              </p>
+            </div>
+
+            <div class="row">
+              <button class="btn btn-primary">Botão para detalhes...</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div id="card2" class="col-6 col-sm-6 col-md-6">
+        <div class="card">
+          <div class="card-body">
+
+            <div class="img-box">
+              <img src="./../../../assets/img/img2.svg" alt="">
+            </div>
+
+            <div class=" txt-box">
+              <h1 class="title-card">Título 2</h1>
+              <p class="text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's.
+              </p>
+            </div>
+
+            <div class="row">
+              <button class="btn btn-primary">Botão para detalhes...</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="col-md-12">
+    <div class="card card-form">
+      <div class="card-body">
+
+        <h1 class="title-card">Título 3</h1>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="label-form" for="form-control">Pergunta 1</label>
+              <input placeholder="Digite a resposta" class="form-control" type="text">
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="label-form" for="form-control">Pergunta 2</label>
+              <input placeholder="Digite a resposta" class="form-control" type="text">
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="form-group">
+              <label class="label-form" for="form-control">Pergunta 3</label>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                  Selecione
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-1">
+            <button id="btnSrc" class="btn btn-primary d-none d-sm-block">
+            </button>
+            <button id="btnSrc2" class="btn btn-primary d-block d-sm-none">
+              Buscar...
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-1 mt-5">
+    <h1 class="simple-title">Título 4</h1>
+    <div></div>
+    <div class="card col-6 col-sm-6 col-md-3 p-0 mt-4 card-list" *ngFor="let item of cardList">
+      <img [src]="imgPath" class="card-img-top m-0" alt="...">
+      <div class="card-body p-3">
+        <p class="card-text">{{item.cardText}}</p>
+        <h5 class="card-title">{{item.cardTitle}}</h5>
+        <a href="#" class="btn btn-primary">Acessar</a>
+      </div>
+    </div>
+  </div>
+  <div class="row my-3">
+    <div class="col-md-12 text-center">
+      <small class="charge-plus">+ Carregar mais cursos</small>
+    </div>
+  </div>
+</div>
